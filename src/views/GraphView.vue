@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import GraphService from "@/services/graph.service";
+import GraphService from "@/utils/graph.service";
 import GraphEditor from "@/components/GraphEditor";
 
 export default {
