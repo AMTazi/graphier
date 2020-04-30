@@ -4,7 +4,9 @@
       <b-col cols="9">
         <GraphEditor v-if="graphIsEmpty" :graph="graph" />
         <div v-else>
-          <h3 class="text-muted text-center">Please Click "Edit" on the right side to add new nodes.</h3>
+          <h3 class="text-muted text-center">
+            Please Click "Edit" on the right side to add new nodes.
+          </h3>
         </div>
       </b-col>
       <b-col>
@@ -18,11 +20,15 @@
               <b-button-toolbar>
                 <b-button-group class="mr-3">
                   <b-button @click="editGraph()" variant="info">Edit</b-button>
-                  <b-button @click="deleteGraph()" variant="danger">Delete</b-button>
+                  <b-button @click="deleteGraph()" variant="danger"
+                    >Delete</b-button
+                  >
                 </b-button-group>
 
                 <b-button-group>
-                  <b-button @click="viewGraphStatistics()">View Statistics</b-button>
+                  <b-button @click="viewGraphStatistics()"
+                    >View Statistics</b-button
+                  >
                 </b-button-group>
               </b-button-toolbar>
               <template v-slot:footer>
