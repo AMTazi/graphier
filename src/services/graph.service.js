@@ -61,7 +61,7 @@ class GraphService {
     newGraph.updatedAt = new Date().toLocaleString();
 
     this.storage.graphs = this.storage.graphs.map(graph => {
-      if (newGraph.id === id) {
+      if (graph.id === id) {
         return newGraph;
       }
       return graph;

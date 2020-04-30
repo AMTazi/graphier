@@ -14,7 +14,7 @@
         <b-list-group-item
           v-for="{ id, name, description, updatedAt } in graphs"
           :key="id"
-          :to="{ name: 'GraphShow', params: { id } }"
+          :to="{ name: 'GraphView', params: { id } }"
           class="flex-column align-items-start"
         >
           <div class="d-flex w-100 justify-content-between">
