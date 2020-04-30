@@ -32,7 +32,6 @@ export default {
   components: { GraphForm, GraphEditor },
   data() {
     return {
-      network: null,
       graph: null
     };
   },
@@ -48,11 +47,12 @@ export default {
         ...this.graph,
         ...graphData
       });
+
+      this.$router.push({ name: "GraphView", params: { id: this.graph.id } });
     }
   },
   mounted() {
-    const graphId = this.$route.params.id;
-    this.graph = new GraphService().getGraphById(graphId);
+    this.graph = new GraphService().getGraphById(this.$route.params.id);
   }
 };
 </script>
