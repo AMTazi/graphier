@@ -1,31 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
-    <router-view />
+    <b-card title="Card Title" class="mb-4" no-body>
+      <b-card-header header-tag="nav">
+        <b-nav card-header>
+          <b-nav-item to="/" exact exact-active-class="active">Home</b-nav-item>
+        </b-nav>
+      </b-card-header>
+    </b-card>
+
+    <b-container fluid>
+      <router-view></router-view>
+    </b-container>
   </div>
 </template>
 
 <style lang="scss">
+html,
+body,
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  height: 100%;
 }
 </style>
