@@ -34,7 +34,8 @@
         variant="primary"
         :disabled="submitButtonDisabled"
         @click="onSubmit"
-      >Save</b-button>
+        >Save</b-button
+      >
     </p>
   </b-form>
 </template>
