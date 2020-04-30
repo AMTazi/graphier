@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import GraphService from "@/services/graph.service";
+import GraphService from "@/utils/graph.service";
 const GraphForm = () => import("@/components/GraphForm.vue");
 
 export default {
